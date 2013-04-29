@@ -1,0 +1,2201 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (21.8ms)[0m  [1mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [1m[35m (22.8ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36m (1.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to CreateBooks (20130429100233)
+  [1m[35m (11.2ms)[0m  CREATE TABLE `books` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `author` varchar(255), `status` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20130429100233')[0m
+  [1m[35m (0.2ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 15:46:44 +0530
+Processing by BooksController#create as HTML
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  Rendered books/_form.html.erb (5.9ms)
+  Rendered books/new.html.erb within layouts/application (13.3ms)
+Compiled books.css  (30ms)  (pid 70061)
+Compiled scaffolds.css  (14ms)  (pid 70061)
+Compiled application.css  (60ms)  (pid 70061)
+Compiled jquery.js  (29ms)  (pid 70061)
+Compiled jquery_ujs.js  (0ms)  (pid 70061)
+Compiled books.js  (264ms)  (pid 70061)
+Compiled application.js  (369ms)  (pid 70061)
+Completed 200 OK in 574ms (Views: 515.9ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 15:47:37 +0530
+Processing by BooksController#create as HTML
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered books/_form.html.erb (5.5ms)
+  Rendered books/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 60ms (Views: 55.8ms | ActiveRecord: 0.3ms)
+Connecting to database specified by database.yml
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 15:49:56 +0530
+Processing by BooksController#create as HTML
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered books/_form.html.erb (5.4ms)
+  Rendered books/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 159ms (Views: 94.5ms | ActiveRecord: 3.4ms)
+Connecting to database specified by database.yml
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 15:50:32 +0530
+Processing by BooksController#create as HTML
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered books/_form.html.erb (8.3ms)
+  Rendered books/new.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 143ms (Views: 78.7ms | ActiveRecord: 3.8ms)
+Connecting to database specified by database.yml
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 15:52:10 +0530
+Processing by BooksController#create as HTML
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered books/_form.html.erb (9.5ms)
+  Rendered books/new.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 148ms (Views: 85.2ms | ActiveRecord: 3.5ms)
+Connecting to database specified by database.yml
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 15:52:41 +0530
+Processing by BooksController#create as HTML
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered books/_form.html.erb (6.1ms)
+  Rendered books/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 161ms (Views: 92.2ms | ActiveRecord: 3.5ms)
+Connecting to database specified by database.yml
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 15:53:40 +0530
+Processing by BooksController#create as HTML
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO `books` (`author`, `created_at`, `name`, `status`, `updated_at`) VALUES ('Sourabh', '2013-04-29 10:23:40', 'A book', 'not read', '2013-04-29 10:23:40')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/books/1
+Completed 302 Found in 63ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2013-04-29 15:53:41 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 1 LIMIT 1
+  Rendered books/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 72ms (Views: 66.7ms | ActiveRecord: 0.3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 16:00:54 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+  Rendered books/index.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 56ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:     <th></th>
+    11:   </tr>
+    12: 
+    13: <% @books.each do |book| %>
+    14:   <tr>
+    15:     <td><%= book.name %></td>
+    16:     <td><%= book.author %></td>
+  app/views/books/index.html.erb:13:in `_app_views_books_index_html_erb___607959220793366522_70279459934680'
+  app/controllers/books_controller.rb:14:in `index'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (16.9ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (24.4ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 16:01:54 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+  Rendered books/index.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 55ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:     <th></th>
+    11:   </tr>
+    12: 
+    13: <% @books.each do |book| %>
+    14:   <tr>
+    15:     <td><%= book.name %></td>
+    16:     <td><%= book.author %></td>
+  app/views/books/index.html.erb:13:in `_app_views_books_index_html_erb__2585760205864059376_70353620944780'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (17.3ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.5ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2013-04-29 16:02:43 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBook Load (0.4ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 1 LIMIT 1
+  Rendered books/show.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <b>Name:</b>
+    5:   <%= @book.name %>
+    6: </p>
+    7: 
+    8: <p>
+  app/views/books/show.html.erb:5:in `_app_views_books_show_html_erb__4085819990785148722_70353602090960'
+  app/controllers/books_controller.rb:27:in `show'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (7.8ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/books/1" for 127.0.0.1 at 2013-04-29 16:03:13 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 1 LIMIT 1[0m
+  Rendered books/show.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 57ms
+
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    2: 
+    3: <p>
+    4:   <b>Name:</b>
+    5:   <%= @book.name %>
+    6: </p>
+    7: 
+    8: <p>
+  app/views/books/show.html.erb:5:in `_app_views_books_show_html_erb___2352894613220838275_70318939466880'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (16.7ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.7ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/books/1.json" for 127.0.0.1 at 2013-04-29 16:05:32 +0530
+Processing by BooksController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 45ms (Views: 1.9ms | ActiveRecord: 3.7ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/books/1" for 127.0.0.1 at 2013-04-29 16:06:58 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 45ms (Views: 1.2ms | ActiveRecord: 3.9ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 16:09:26 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 500 Internal Server Error in 43ms
+
+RuntimeError (In order to use respond_with, first you need to declare the formats your controller responds to in the class level):
+  app/controllers/books_controller.rb:14:in `index'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 16:10:13 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+  Rendered books/index.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 55ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:     <th></th>
+    11:   </tr>
+    12: 
+    13: <% @books.each do |book| %>
+    14:   <tr>
+    15:     <td><%= book.name %></td>
+    16:     <td><%= book.author %></td>
+  app/views/books/index.html.erb:13:in `_app_views_books_index_html_erb__3608722606256540484_70344608098060'
+  app/controllers/books_controller.rb:16:in `index'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (18.1ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (24.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 16:11:31 +0530
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+  Rendered books/index.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 59ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    10:     <th></th>
+    11:   </tr>
+    12: 
+    13: <% @books.each do |book| %>
+    14:   <tr>
+    15:     <td><%= book.name %></td>
+    16:     <td><%= book.author %></td>
+  app/views/books/index.html.erb:13:in `_app_views_books_index_html_erb___2003716194231557353_70315235090220'
+  app/controllers/books_controller.rb:14:in `index'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (17.4ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.3ms)
+
+
+Started GET "/books.json" for 127.0.0.1 at 2013-04-29 16:11:35 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/1.json" for 127.0.0.1 at 2013-04-29 16:11:50 +0530
+Processing by BooksController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/books/1.json" for 127.0.0.1 at 2013-04-29 16:13:16 +0530
+Processing by BooksController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 43ms (Views: 1.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2013-04-29 16:13:19 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 1 LIMIT 1
+  Rendered books/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 63ms (Views: 61.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-29 16:13:19 +0530
+Served asset /application.css - 200 OK (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-29 16:13:19 +0530
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2013-04-29 16:13:19 +0530
+Served asset /books.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-29 16:13:19 +0530
+Served asset /jquery.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-29 16:13:19 +0530
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2013-04-29 16:13:19 +0530
+Served asset /books.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-04-29 16:13:19 +0530
+Served asset /application.js - 200 OK (5ms)
+Connecting to database specified by database.yml
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 16:25:05 +0530
+Processing by BooksController#create as HTML
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO `books` (`author`, `created_at`, `name`, `status`, `updated_at`) VALUES ('Sourabh', '2013-04-29 10:55:06', 'A book', 'not read', '2013-04-29 10:55:06')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 65ms (Views: 2.8ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/css/bootstrap.css" for 127.0.0.1 at 2013-04-29 17:04:41 +0530
+Served asset /css/bootstrap.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/assets/css/bootstrap-responsive.css" for 127.0.0.1 at 2013-04-29 17:04:41 +0530
+Served asset /css/bootstrap-responsive.css - 404 Not Found (19ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap-responsive.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/lib/backbone.js" for 127.0.0.1 at 2013-04-29 17:04:41 +0530
+
+ActionController::RoutingError (No route matches [GET] "/lib/backbone.js"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/css/bootstrap.css" for 127.0.0.1 at 2013-04-29 17:06:42 +0530
+Served asset /css/bootstrap.css - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/css/bootstrap-responsive.css" for 127.0.0.1 at 2013-04-29 17:06:42 +0530
+Served asset /css/bootstrap-responsive.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap-responsive.css"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/lib/backbone.js" for 127.0.0.1 at 2013-04-29 17:06:42 +0530
+
+ActionController::RoutingError (No route matches [GET] "/lib/backbone.js"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/lib/backbone.js" for 127.0.0.1 at 2013-04-29 17:07:11 +0530
+
+ActionController::RoutingError (No route matches [GET] "/lib/backbone.js"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/lib/backbone.js" for 127.0.0.1 at 2013-04-29 17:07:11 +0530
+
+ActionController::RoutingError (No route matches [GET] "/lib/backbone.js"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/lib/backbone.js" for 127.0.0.1 at 2013-04-29 17:07:35 +0530
+
+ActionController::RoutingError (No route matches [GET] "/lib/backbone.js"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/lib/backbone.js" for 127.0.0.1 at 2013-04-29 17:07:35 +0530
+
+ActionController::RoutingError (No route matches [GET] "/lib/backbone.js"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/lib/backbone.js" for 127.0.0.1 at 2013-04-29 17:07:42 +0530
+
+ActionController::RoutingError (No route matches [GET] "/lib/backbone.js"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/lib/backbone.js" for 127.0.0.1 at 2013-04-29 17:07:43 +0530
+
+ActionController::RoutingError (No route matches [GET] "/lib/backbone.js"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/lib/backbone.js" for 127.0.0.1 at 2013-04-29 17:54:18 +0530
+
+ActionController::RoutingError (No route matches [GET] "/lib/backbone.js"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/lib/backbone.js" for 127.0.0.1 at 2013-04-29 17:54:18 +0530
+
+ActionController::RoutingError (No route matches [GET] "/lib/backbone.js"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/lib/backbone.js" for 127.0.0.1 at 2013-04-29 17:54:22 +0530
+
+ActionController::RoutingError (No route matches [GET] "/lib/backbone.js"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/lib/backbone.js" for 127.0.0.1 at 2013-04-29 17:54:22 +0530
+
+ActionController::RoutingError (No route matches [GET] "/lib/backbone.js"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:11:41 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 16ms (Views: 0.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:11:59 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:14:58 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:15:19 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:15:31 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:15:46 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:16:33 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:19:08 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:19:37 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:20:26 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:20:53 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:21:18 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:22:09 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:22:46 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:22:56 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:23:07 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:23:35 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:23:44 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:24:29 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:25:01 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:25:31 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:26:29 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:26:50 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.5ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:27:42 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:28:04 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:30:02 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:30:10 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:30:20 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:30:25 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:33:58 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:36:32 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:36:52 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:44:11 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:45:34 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:46:33 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:49:14 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:49:48 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:49:58 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:50:10 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:52:26 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:52:31 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:52:56 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:54:42 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:54:54 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:55:27 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:56:00 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:56:25 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:58:27 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:58:38 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:58:53 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 18:59:05 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:01:12 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:01:18 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:01:26 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:01:37 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:02:40 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:02:54 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/books/2" for 127.0.0.1 at 2013-04-29 19:02:55 +0530
+Processing by BooksController#destroy as JSON
+  Parameters: {"id"=>"2"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `books` WHERE `books`.`id` = 2[0m
+  [1m[35m (1.6ms)[0m  COMMIT
+Completed 204 No Content in 7ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:03:00 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:08:47 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:10:17 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:10:55 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:12:10 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:12:30 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:16:00 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:16:10 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:16:19 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:16:30 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.4ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:17:26 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.5ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:18:11 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:21:29 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:21:53 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:22:22 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:22:35 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:22:48 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:23:02 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:23:12 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:23:57 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:24:22 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:26:29 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:27:31 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:27:45 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:28:58 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 19:29:06 +0530
+Processing by BooksController#create as JSON
+  Parameters: {"status"=>"READ", "name"=>"dqdqwd", "author"=>"dqwdwq", "book"=>{"author"=>"dqwdwq", "name"=>"dqdqwd", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `books` (`author`, `created_at`, `name`, `status`, `updated_at`) VALUES ('dqwdwq', '2013-04-29 13:59:06', 'dqdqwd', 'READ', '2013-04-29 13:59:06')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Completed 201 Created in 6ms (Views: 1.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:29:11 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/books/3" for 127.0.0.1 at 2013-04-29 19:29:13 +0530
+Processing by BooksController#destroy as JSON
+  Parameters: {"id"=>"3"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 3 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `books` WHERE `books`.`id` = 3
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 3ms (ActiveRecord: 0.9ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 19:29:26 +0530
+Processing by BooksController#create as JSON
+  Parameters: {"status"=>"READ", "name"=>"dwqd", "author"=>"dwqqwwqd", "book"=>{"author"=>"dwqqwwqd", "name"=>"dwqd", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `books` (`author`, `created_at`, `name`, `status`, `updated_at`) VALUES ('dwqqwwqd', '2013-04-29 13:59:26', 'dwqd', 'READ', '2013-04-29 13:59:26')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Completed 201 Created in 3ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 19:29:32 +0530
+Processing by BooksController#create as JSON
+  Parameters: {"status"=>"READ", "name"=>"dwqd", "author"=>"dwqqwwqd", "book"=>{"author"=>"dwqqwwqd", "name"=>"dwqd", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `books` (`author`, `created_at`, `name`, `status`, `updated_at`) VALUES ('dwqqwwqd', '2013-04-29 13:59:32', 'dwqd', 'READ', '2013-04-29 13:59:32')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 6ms (Views: 1.0ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 19:29:32 +0530
+Processing by BooksController#create as JSON
+  Parameters: {"status"=>"READ", "name"=>"eeq", "author"=>"dwqd", "book"=>{"author"=>"dwqd", "name"=>"eeq", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `books` (`author`, `created_at`, `name`, `status`, `updated_at`) VALUES ('dwqd', '2013-04-29 13:59:32', 'eeq', 'READ', '2013-04-29 13:59:32')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Completed 201 Created in 3ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 19:29:44 +0530
+Processing by BooksController#create as JSON
+  Parameters: {"status"=>"READ", "name"=>"dwqd", "author"=>"dwqqwwqd", "book"=>{"author"=>"dwqqwwqd", "name"=>"dwqd", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.4ms)[0m  INSERT INTO `books` (`author`, `created_at`, `name`, `status`, `updated_at`) VALUES ('dwqqwwqd', '2013-04-29 13:59:44', 'dwqd', 'READ', '2013-04-29 13:59:44')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 6ms (Views: 0.6ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 19:29:44 +0530
+Processing by BooksController#create as JSON
+  Parameters: {"status"=>"READ", "name"=>"eeq", "author"=>"dwqd", "book"=>{"author"=>"dwqd", "name"=>"eeq", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `books` (`author`, `created_at`, `name`, `status`, `updated_at`) VALUES ('dwqd', '2013-04-29 13:59:44', 'eeq', 'READ', '2013-04-29 13:59:44')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Completed 201 Created in 4ms (Views: 0.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 19:29:44 +0530
+Processing by BooksController#create as JSON
+  Parameters: {"status"=>"READ", "name"=>"dwqdqwd", "author"=>"dqwdqwdqwd", "book"=>{"author"=>"dqwdqwdqwd", "name"=>"dwqdqwd", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `books` (`author`, `created_at`, `name`, `status`, `updated_at`) VALUES ('dqwdqwdqwd', '2013-04-29 13:59:44', 'dwqdqwd', 'READ', '2013-04-29 13:59:44')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 3ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:30:12 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 19:30:18 +0530
+Processing by BooksController#create as JSON
+  Parameters: {"status"=>"READ", "name"=>"dqwqwlkd", "author"=>"dwqd", "book"=>{"author"=>"dwqd", "name"=>"dqwqwlkd", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `books` (`author`, `created_at`, `name`, `status`, `updated_at`) VALUES ('dwqd', '2013-04-29 14:00:18', 'dqwqwlkd', 'READ', '2013-04-29 14:00:18')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 4ms (Views: 1.0ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/books/4" for 127.0.0.1 at 2013-04-29 19:30:21 +0530
+Processing by BooksController#destroy as JSON
+  Parameters: {"id"=>"4"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 4 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `books` WHERE `books`.`id` = 4
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 3ms (ActiveRecord: 0.9ms)
+
+
+Started DELETE "/books/5" for 127.0.0.1 at 2013-04-29 19:30:21 +0530
+Processing by BooksController#destroy as JSON
+  Parameters: {"id"=>"5"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 5 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `books` WHERE `books`.`id` = 5
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 3ms (ActiveRecord: 0.9ms)
+
+
+Started DELETE "/books/6" for 127.0.0.1 at 2013-04-29 19:30:21 +0530
+Processing by BooksController#destroy as JSON
+  Parameters: {"id"=>"6"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 6 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `books` WHERE `books`.`id` = 6
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 3ms (ActiveRecord: 0.9ms)
+
+
+Started DELETE "/books/7" for 127.0.0.1 at 2013-04-29 19:30:22 +0530
+Processing by BooksController#destroy as JSON
+  Parameters: {"id"=>"7"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 7 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `books` WHERE `books`.`id` = 7
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 4ms (ActiveRecord: 2.1ms)
+
+
+Started DELETE "/books/8" for 127.0.0.1 at 2013-04-29 19:30:22 +0530
+Processing by BooksController#destroy as JSON
+  Parameters: {"id"=>"8"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 8 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `books` WHERE `books`.`id` = 8
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 3ms (ActiveRecord: 0.9ms)
+
+
+Started DELETE "/books/9" for 127.0.0.1 at 2013-04-29 19:30:22 +0530
+Processing by BooksController#destroy as JSON
+  Parameters: {"id"=>"9"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 9 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `books` WHERE `books`.`id` = 9
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 3ms (ActiveRecord: 0.9ms)
+
+
+Started DELETE "/books/10" for 127.0.0.1 at 2013-04-29 19:30:23 +0530
+Processing by BooksController#destroy as JSON
+  Parameters: {"id"=>"10"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 10 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `books` WHERE `books`.`id` = 10
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 3ms (ActiveRecord: 0.8ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 19:30:26 +0530
+Processing by BooksController#create as JSON
+  Parameters: {"status"=>"READ", "name"=>"dqwqwlkd", "author"=>"dwqd", "book"=>{"author"=>"dwqd", "name"=>"dqwqwlkd", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `books` (`author`, `created_at`, `name`, `status`, `updated_at`) VALUES ('dwqd', '2013-04-29 14:00:26', 'dqwqwlkd', 'READ', '2013-04-29 14:00:26')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Completed 201 Created in 3ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 19:30:30 +0530
+Processing by BooksController#create as JSON
+  Parameters: {"status"=>"READ", "name"=>"dqwqwlkd", "author"=>"dwqd", "book"=>{"author"=>"dwqd", "name"=>"dqwqwlkd", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `books` (`author`, `created_at`, `name`, `status`, `updated_at`) VALUES ('dwqd', '2013-04-29 14:00:30', 'dqwqwlkd', 'READ', '2013-04-29 14:00:30')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 3ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/books/12" for 127.0.0.1 at 2013-04-29 19:30:31 +0530
+Processing by BooksController#destroy as JSON
+  Parameters: {"id"=>"12"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 12 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `books` WHERE `books`.`id` = 12
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 3ms (ActiveRecord: 0.8ms)
+
+
+Started DELETE "/books/11" for 127.0.0.1 at 2013-04-29 19:30:32 +0530
+Processing by BooksController#destroy as JSON
+  Parameters: {"id"=>"11"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 11 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `books` WHERE `books`.`id` = 11
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 3ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:32:13 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:32:53 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:33:17 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:36:14 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:37:04 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:37:51 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:38:18 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:38:50 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:40:45 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 19:40:55 +0530
+Processing by BooksController#create as JSON
+  Parameters: {"status"=>"NOT_YET_READ", "name"=>"ksqwdl", "author"=>"djlkjqwld", "book"=>{"author"=>"djlkjqwld", "name"=>"ksqwdl", "status"=>"NOT_YET_READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `books` (`author`, `created_at`, `name`, `status`, `updated_at`) VALUES ('djlkjqwld', '2013-04-29 14:10:55', 'ksqwdl', 'NOT_YET_READ', '2013-04-29 14:10:55')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 3ms (Views: 0.6ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/books/1" for 127.0.0.1 at 2013-04-29 19:41:02 +0530
+Processing by BooksController#destroy as JSON
+  Parameters: {"id"=>"1"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE `books`.`id` = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM `books` WHERE `books`.`id` = 1
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 3ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:42:21 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:43:49 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:44:24 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:44:53 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:45:27 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:46:23 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 19:47:00 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 19:47:08 +0530
+Processing by BooksController#create as JSON
+  Parameters: {"status"=>"READ", "name"=>"dwqdqw", "author"=>"rfewfewfwefewfew", "book"=>{"author"=>"rfewfewfwefewfew", "name"=>"dwqdqw", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `books` (`author`, `created_at`, `name`, `status`, `updated_at`) VALUES ('rfewfewfwefewfew', '2013-04-29 14:17:08', 'dwqdqw', 'READ', '2013-04-29 14:17:08')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 3ms (Views: 0.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 19:47:20 +0530
+Processing by BooksController#create as JSON
+  Parameters: {"status"=>"READ", "name"=>"dwqdqd", "author"=>"wefwfwfwfwf", "book"=>{"author"=>"wefwfwfwfwf", "name"=>"dwqdqd", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `books` (`author`, `created_at`, `name`, `status`, `updated_at`) VALUES ('wefwfwfwfwf', '2013-04-29 14:17:20', 'dwqdqd', 'READ', '2013-04-29 14:17:20')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Completed 201 Created in 4ms (Views: 0.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 21:34:14 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 21:34:50 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 21:34:58 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 21:35:43 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 21:35:59 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 21:36:22 +0530
+Processing by BooksController#create as JSON
+  Parameters: {"status"=>"READ", "name"=>"dwqdqd", "author"=>"abcde", "book"=>{"author"=>"abcde", "name"=>"dwqdqd", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `books` (`author`, `created_at`, `name`, `status`, `updated_at`) VALUES ('abcde', '2013-04-29 16:06:22', 'dwqdqd', 'READ', '2013-04-29 16:06:22')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Completed 201 Created in 3ms (Views: 0.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 21:36:26 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 21:36:39 +0530
+Processing by BooksController#create as JSON
+  Parameters: {"status"=>"READ", "name"=>"dwqdqd", "author"=>"abcde", "book"=>{"author"=>"abcde", "name"=>"dwqdqd", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `books` (`author`, `created_at`, `name`, `status`, `updated_at`) VALUES ('abcde', '2013-04-29 16:06:39', 'dwqdqd', 'READ', '2013-04-29 16:06:39')[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Completed 201 Created in 3ms (Views: 0.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 21:36:42 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 21:40:11 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 21:41:29 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 21:41:44 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/books/15" for 127.0.0.1 at 2013-04-29 21:41:49 +0530
+Processing by BooksController#update as JSON
+  Parameters: {"status"=>"READ", "author"=>"abc", "created_at"=>"2013-04-29T14:17:20Z", "id"=>"15", "name"=>"dwqdqd", "updated_at"=>"2013-04-29T14:17:20Z", "book"=>{"author"=>"abc", "name"=>"dwqdqd", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 15 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `stringify_keys' for #<String:0x007fa5248e8fe8>):
+  app/controllers/books_controller.rb:47:in `block in update'
+  app/controllers/books_controller.rb:46:in `update'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.5ms)
+Connecting to database specified by database.yml
+
+
+Started PUT "/books/15" for 127.0.0.1 at 2013-04-29 21:43:00 +0530
+Processing by BooksController#update as JSON
+  Parameters: {"status"=>"READ", "author"=>"abc", "created_at"=>"2013-04-29T14:17:20Z", "id"=>"15", "name"=>"dwqdqd", "updated_at"=>"2013-04-29T14:17:20Z", "book"=>{"author"=>"abc", "name"=>"dwqdqd", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 15 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 49ms
+
+NoMethodError (undefined method `stringify_keys' for #<String:0x007fa0cd988f08>):
+  app/controllers/books_controller.rb:49:in `block in update'
+  app/controllers/books_controller.rb:48:in `update'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.4ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 21:43:40 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 17ms (Views: 2.4ms | ActiveRecord: 3.3ms)
+
+
+Started PUT "/books/15" for 127.0.0.1 at 2013-04-29 21:43:45 +0530
+Processing by BooksController#update as JSON
+  Parameters: {"status"=>"READ", "author"=>"abc", "created_at"=>"2013-04-29T14:17:20Z", "id"=>"15", "name"=>"dwqdqd", "updated_at"=>"2013-04-29T14:17:20Z", "book"=>{"author"=>"abc", "name"=>"dwqdqd", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 15 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `stringify_keys' for #<String:0x007fa0cdb5fe08>):
+  app/controllers/books_controller.rb:49:in `block in update'
+  app/controllers/books_controller.rb:48:in `update'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.2ms)
+Connecting to database specified by database.yml
+
+
+Started PUT "/books/15" for 127.0.0.1 at 2013-04-29 21:45:20 +0530
+Processing by BooksController#update as JSON
+  Parameters: {"status"=>"READ", "author"=>"abc", "created_at"=>"2013-04-29T14:17:20Z", "id"=>"15", "name"=>"dwqdqd", "updated_at"=>"2013-04-29T14:17:20Z", "book"=>{"author"=>"abc", "name"=>"dwqdqd", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 15 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 50ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: created_at, id, updated_at):
+  app/controllers/books_controller.rb:49:in `block in update'
+  app/controllers/books_controller.rb:48:in `update'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.7ms)
+Connecting to database specified by database.yml
+
+
+Started PUT "/books/15" for 127.0.0.1 at 2013-04-29 21:47:33 +0530
+Processing by BooksController#update as JSON
+  Parameters: {"status"=>"READ", "author"=>"abc", "created_at"=>"2013-04-29T14:17:20Z", "id"=>"15", "name"=>"dwqdqd", "updated_at"=>"2013-04-29T14:17:20Z", "book"=>{"author"=>"abc", "name"=>"dwqdqd", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 15 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 49ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: created_at, id, updated_at):
+  app/controllers/books_controller.rb:47:in `block in update'
+  app/controllers/books_controller.rb:46:in `update'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.7ms)
+Connecting to database specified by database.yml
+
+
+Started PUT "/books/15" for 127.0.0.1 at 2013-04-29 21:49:16 +0530
+Processing by BooksController#update as JSON
+  Parameters: {"status"=>"READ", "author"=>"abc", "created_at"=>"2013-04-29T14:17:20Z", "id"=>"15", "name"=>"dwqdqd", "updated_at"=>"2013-04-29T14:17:20Z", "book"=>{"author"=>"abc", "name"=>"dwqdqd", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 15 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 50ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: created_at, id, updated_at):
+  app/controllers/books_controller.rb:47:in `block in update'
+  app/controllers/books_controller.rb:46:in `update'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.7ms)
+Connecting to database specified by database.yml
+
+
+Started PUT "/books/15" for 127.0.0.1 at 2013-04-29 21:51:32 +0530
+Processing by BooksController#update as JSON
+  Parameters: {"status"=>"READ", "author"=>"abc", "created_at"=>"2013-04-29T14:17:20Z", "id"=>"15", "name"=>"dwqdqd", "updated_at"=>"2013-04-29T14:17:20Z", "book"=>{"author"=>"abc", "name"=>"dwqdqd", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 15 LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (1.5ms)[0m  [1mUPDATE `books` SET `author` = 'abc', `updated_at` = '2013-04-29 16:21:32' WHERE `books`.`id` = 15[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Completed 204 No Content in 58ms (ActiveRecord: 5.5ms)
+
+
+Started DELETE "/books/15" for 127.0.0.1 at 2013-04-29 21:51:45 +0530
+Processing by BooksController#destroy as JSON
+  Parameters: {"id"=>"15"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 15 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `books` WHERE `books`.`id` = 15[0m
+  [1m[35m (1.5ms)[0m  COMMIT
+Completed 204 No Content in 5ms (ActiveRecord: 2.2ms)
+
+
+Started DELETE "/books/16" for 127.0.0.1 at 2013-04-29 21:51:46 +0530
+Processing by BooksController#destroy as JSON
+  Parameters: {"id"=>"16"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 16 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `books` WHERE `books`.`id` = 16[0m
+  [1m[35m (1.6ms)[0m  COMMIT
+Completed 204 No Content in 4ms (ActiveRecord: 2.2ms)
+
+
+Started DELETE "/books/17" for 127.0.0.1 at 2013-04-29 21:51:47 +0530
+Processing by BooksController#destroy as JSON
+  Parameters: {"id"=>"17"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 17 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `books` WHERE `books`.`id` = 17[0m
+  [1m[35m (1.5ms)[0m  COMMIT
+Completed 204 No Content in 4ms (ActiveRecord: 2.0ms)
+
+
+Started DELETE "/books/14" for 127.0.0.1 at 2013-04-29 21:51:47 +0530
+Processing by BooksController#destroy as JSON
+  Parameters: {"id"=>"14"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 14 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `books` WHERE `books`.`id` = 14[0m
+  [1m[35m (1.6ms)[0m  COMMIT
+Completed 204 No Content in 4ms (ActiveRecord: 2.2ms)
+
+
+Started DELETE "/books/13" for 127.0.0.1 at 2013-04-29 21:51:49 +0530
+Processing by BooksController#destroy as JSON
+  Parameters: {"id"=>"13"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 13 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM `books` WHERE `books`.`id` = 13[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Completed 204 No Content in 3ms (ActiveRecord: 0.9ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 21:52:16 +0530
+Processing by BooksController#create as JSON
+  Parameters: {"status"=>"READ", "name"=>"Animal Farm", "author"=>"George Orwell", "book"=>{"author"=>"George Orwell", "name"=>"Animal Farm", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `books` (`author`, `created_at`, `name`, `status`, `updated_at`) VALUES ('George Orwell', '2013-04-29 16:22:16', 'Animal Farm', 'READ', '2013-04-29 16:22:16')
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 5ms (Views: 1.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 21:55:01 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 21:55:18 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 21:55:28 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 21:57:11 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 22:03:18 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books?q=cendnqw" for 127.0.0.1 at 2013-04-29 22:03:22 +0530
+Processing by BooksController#index as JSON
+  Parameters: {"q"=>"cendnqw"}
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/books?q=cendnqw" for 127.0.0.1 at 2013-04-29 22:09:27 +0530
+
+SyntaxError (/Users/saurabhagarwal/checkouts/shelfari/app/controllers/books_controller.rb:16: syntax error, unexpected ',', expecting tASSOC
+      @books = Book.where({"name like ?", "%#{q}%"}).all
+                                         ^
+/Users/saurabhagarwal/checkouts/shelfari/app/controllers/books_controller.rb:16: syntax error, unexpected '}', expecting keyword_end
+      @books = Book.where({"name like ?", "%#{q}%"}).all
+                                                   ^):
+  activesupport (3.2.13) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.13) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.13) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.13) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__2858685989363629627__call__3568558224450488662__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/saurabhagarwal/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/books?q=cendnqw" for 127.0.0.1 at 2013-04-29 22:11:27 +0530
+Processing by BooksController#index as JSON
+  Parameters: {"q"=>"cendnqw"}
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`name like ?` = '%cendnqw%'[0m
+Mysql2::Error: Unknown column 'books.name like ?' in 'where clause': SELECT `books`.* FROM `books`  WHERE `books`.`name like ?` = '%cendnqw%'
+Completed 500 Internal Server Error in 51ms
+
+ActiveRecord::StatementInvalid (Mysql2::Error: Unknown column 'books.name like ?' in 'where clause': SELECT `books`.* FROM `books`  WHERE `books`.`name like ?` = '%cendnqw%'):
+  app/controllers/books_controller.rb:16:in `index'
+
+
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.1ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/saurabhagarwal/.rvm/gems/ruby-1.9.3-p362/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.7ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/books?q=cendnqw" for 127.0.0.1 at 2013-04-29 22:12:26 +0530
+Processing by BooksController#index as JSON
+  Parameters: {"q"=>"cendnqw"}
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE (name like '%cendnqw%')[0m
+Completed 200 OK in 40ms (Views: 0.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/books?q=animal" for 127.0.0.1 at 2013-04-29 22:12:37 +0530
+Processing by BooksController#index as JSON
+  Parameters: {"q"=>"animal"}
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE (name like '%animal%')
+Completed 200 OK in 8ms (Views: 1.4ms | ActiveRecord: 0.3ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/books?q=" for 127.0.0.1 at 2013-04-29 22:13:08 +0530
+Processing by BooksController#index as JSON
+  Parameters: {"q"=>""}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 54ms (Views: 1.4ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 22:13:34 +0530
+Processing by BooksController#create as JSON
+  Parameters: {"status"=>"READ", "name"=>"Da Vinci Code", "author"=>"Dan Brown", "book"=>{"author"=>"Dan Brown", "name"=>"Da Vinci Code", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO `books` (`author`, `created_at`, `name`, `status`, `updated_at`) VALUES ('Dan Brown', '2013-04-29 16:43:34', 'Da Vinci Code', 'READ', '2013-04-29 16:43:34')[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Completed 201 Created in 13ms (Views: 1.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/books?q=da" for 127.0.0.1 at 2013-04-29 22:13:43 +0530
+Processing by BooksController#index as JSON
+  Parameters: {"q"=>"da"}
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE (name like '%da%')[0m
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books?q=d" for 127.0.0.1 at 2013-04-29 22:13:46 +0530
+Processing by BooksController#index as JSON
+  Parameters: {"q"=>"d"}
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` WHERE (name like '%d%')
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books?q=vin" for 127.0.0.1 at 2013-04-29 22:13:49 +0530
+Processing by BooksController#index as JSON
+  Parameters: {"q"=>"vin"}
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE (name like '%vin%')[0m
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books?q=" for 127.0.0.1 at 2013-04-29 22:13:51 +0530
+Processing by BooksController#index as JSON
+  Parameters: {"q"=>""}
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 22:14:11 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 22:14:24 +0530
+Processing by BooksController#index as JSON
+  [1m[35mBook Load (0.2ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/books?q=code" for 127.0.0.1 at 2013-04-29 22:14:30 +0530
+Processing by BooksController#index as JSON
+  Parameters: {"q"=>"code"}
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE (name like '%code%')[0m
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books?q=" for 127.0.0.1 at 2013-04-29 22:14:34 +0530
+Processing by BooksController#index as JSON
+  Parameters: {"q"=>""}
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2013-04-29 22:16:31 +0530
+Processing by BooksController#create as JSON
+  Parameters: {"status"=>"READ", "name"=>"Flying Over the Cuckoo's nest", "author"=>"Ken Kessy", "book"=>{"author"=>"Ken Kessy", "name"=>"Flying Over the Cuckoo's nest", "status"=>"READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `books` (`author`, `created_at`, `name`, `status`, `updated_at`) VALUES ('Ken Kessy', '2013-04-29 16:46:31', 'Flying Over the Cuckoo\'s nest', 'READ', '2013-04-29 16:46:31')
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 4ms (Views: 0.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/books?q=Cuckoo%27s" for 127.0.0.1 at 2013-04-29 22:16:46 +0530
+Processing by BooksController#index as JSON
+  Parameters: {"q"=>"Cuckoo's"}
+  [1m[35mBook Load (0.4ms)[0m  SELECT `books`.* FROM `books` WHERE (name like '%Cuckoo\'s%')
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/books?q=Cuckoo%27s" for 127.0.0.1 at 2013-04-29 22:16:46 +0530
+Processing by BooksController#index as JSON
+  Parameters: {"q"=>"Cuckoo's"}
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE (name like '%Cuckoo\'s%')[0m
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books?q=" for 127.0.0.1 at 2013-04-29 22:16:49 +0530
+Processing by BooksController#index as JSON
+  Parameters: {"q"=>""}
+  [1m[35mBook Load (0.3ms)[0m  SELECT `books`.* FROM `books` 
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms)
+
+
+Started PUT "/books/20" for 127.0.0.1 at 2013-04-29 22:17:00 +0530
+Processing by BooksController#update as JSON
+  Parameters: {"status"=>"NOT_YET_READ", "author"=>"Ken Kessy", "created_at"=>"2013-04-29T16:46:31Z", "id"=>"20", "name"=>"Flying Over the Cuckoo's nest", "updated_at"=>"2013-04-29T16:46:31Z", "book"=>{"author"=>"Ken Kessy", "name"=>"Flying Over the Cuckoo's nest", "status"=>"NOT_YET_READ"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT `books`.* FROM `books` WHERE `books`.`id` = 20 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mUPDATE `books` SET `status` = 'NOT_YET_READ', `updated_at` = '2013-04-29 16:47:00' WHERE `books`.`id` = 20[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Completed 204 No Content in 7ms (ActiveRecord: 1.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/books" for 127.0.0.1 at 2013-04-29 22:17:53 +0530
+Processing by BooksController#index as JSON
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT `books`.* FROM `books` [0m
+Completed 200 OK in 42ms (Views: 1.5ms | ActiveRecord: 3.5ms)
